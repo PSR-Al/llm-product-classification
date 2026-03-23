@@ -54,6 +54,22 @@ This approach allows models to specialize in the domain and learn task-specific 
 
 ---
 
+## Computational Constraints
+
+This project was developed entirely in local environments without access to high-performance servers or advanced GPUs.
+
+Model selection and training configuration were adapted to these constraints:
+
+- Medium-sized models (e.g., RoBERTa, DeBERTa, XLM-R)
+- Limited number of training epochs to ensure convergence and avoid overfitting
+- Small batch sizes and efficient optimization strategies
+
+For zero-shot evaluation, quantized LLMs (GGUF format) were executed locally using LM Studio, enabling inference on CPU without requiring advanced infrastructure.
+
+This setup reflects realistic scenarios such as small companies, academic environments, or individual projects, demonstrating that competitive results can be achieved with modest computational resources.
+
+---
+
 ### Zero-shot Learning
 
 Zero-shot evaluation was performed using locally deployed LLMs through LM Studio.
